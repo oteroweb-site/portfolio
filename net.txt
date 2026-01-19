@@ -1,0 +1,32 @@
+
+Configura??o de IP do Windows
+
+
+Adaptador Ethernet Ethernet 5:
+
+   Sufixo DNS espec?fico de conex?o. . . . . . : 
+   Endere?o IPv6 de link local . . . . . . . . : fe80::804:2cf7:4a12:b125%17
+   Endere?o IPv4. . . . . . . .  . . . . . . . : 192.168.56.2
+   M?scara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+   Gateway Padr?o. . . . . . . . . . . . . . . : 
+
+Adaptador Ethernet Ethernet 6:
+
+   Sufixo DNS espec?fico de conex?o. . . . . . : 
+   Endere?o IPv6 de link local . . . . . . . . : fe80::fb19:4226:4169:e64%6
+   Endere?o IPv4. . . . . . . .  . . . . . . . : 192.168.56.1
+   M?scara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+   Gateway Padr?o. . . . . . . . . . . . . . . : 
+
+Adaptador Ethernet Ethernet 2:
+
+   Sufixo DNS espec?fico de conex?o. . . . . . : 
+   Endere?o IPv6 . . . . . . . . . . : 2804:d41:b07f:a000:521d:930c:92c8:7148
+   Endere?o IPv6 Tempor?rio. . . . . . . . : 2804:d41:b07f:a000:51c2:e199:eb36:4d3d
+   Endere?o IPv6 Tempor?rio. . . . . . . . : 2804:d41:b07f:a000:8898:e73f:4218:d1ae
+   Endere?o IPv6 Tempor?rio. . . . . . . . : 2804:d41:b07f:a000:ade8:4f22:b46a:3ea2
+   Endere?o IPv6 de link local . . . . . . . . : fe80::9b96:b542:25de:432c%11
+   Endere?o IPv4. . . . . . . .  . . . . . . . : 192.168.100.5
+   M?scara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+   Gateway Padr?o. . . . . . . . . . . . . . . : fe80::9e63:5bff:fe5d:3fd0%11
+                                                 192.168.100.1

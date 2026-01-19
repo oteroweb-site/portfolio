@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60" width="300" height="60">
+  <!-- Background (optional - remove if you want transparent) -->
+  <rect width="300" height="60" fill="#020617" rx="4"/>
+  
+  <!-- OTERO text in white -->
+  <text x="85" y="40" font-family="'Lexend', sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="1">OTERO</text>
+  
+  <!-- WEB text in teal -->
+  <text x="185" y="40" font-family="'Lexend', sans-serif" font-size="28" font-weight="800" fill="#2dd4bf" letter-spacing="1">WEB</text>
+</svg>

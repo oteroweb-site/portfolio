@@ -1,0 +1,460 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Variables */
+:root {
+    --primary-color: #4B2D5A;
+    /* Roxo Profundo */
+    --secondary-color: #A682B3;
+    /* Lilás */
+    --accent-color: #D4B2D8;
+    /* Lilás Claro / Destaque */
+    --light-bg: #f9f9f9;
+    --text-white: #ffffff;
+    --text-dark: #333333;
+}
+
+.text-highlight {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.badge-status {
+    background: rgba(166, 130, 179, 0.2);
+    color: var(--primary-color);
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Layout Utilities */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-white {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.section-lilac {
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+    padding: 80px 0;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+.btn-nav {
+    border: 1px solid var(--text-white);
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.btn-nav:hover {
+    background-color: var(--text-white);
+    color: var(--primary-color) !important;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(75, 45, 90, 0.7), rgba(75, 45, 90, 0.7)), url('hero_bg.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: var(--text-white);
+    padding: 0 20px;
+    padding-top: 80px;
+    /* Space for fixed header */
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #8E659A;
+}
+
+.btn-secondary {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #3a2245;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+/* Quem Somos */
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.text-col {
+    flex: 1;
+}
+
+.img-col {
+    flex: 1;
+}
+
+.section-white h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-white p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Atuação */
+.section-lilac h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card-simple {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-simple h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Para Quem */
+.icons-grid .icon-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.circle-icon {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2.5rem;
+}
+
+.icon-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Serviços */
+.card-service {
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-real {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.link-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s;
+}
+
+.link-more:hover {
+    border-color: var(--primary-color);
+}
+
+/* Equipe */
+.team-member {
+    text-align: center;
+}
+
+.team-member h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.team-member .role {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.team-member .crp {
+    color: #999;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Footer / Contact */
+.footer-content {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.info p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Utilitários de Imagem */
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide for now, can implement toggle with JS */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
