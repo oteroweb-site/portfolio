@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="50" cy="50" r="50" />
+    </clipPath>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="50" fill="#020617" />
+  
+  <!-- Monogram OW -->
+  <g clip-path="url(#circleClip)">
+    <!-- W in Teal -->
+    <text x="52" y="68" font-family="'Lexend', sans-serif" font-size="55" font-weight="900" fill="#2dd4bf" text-anchor="middle" letter-spacing="-2">W</text>
+    <!-- O in White, slightly overlapping -->
+    <text x="35" y="68" font-family="'Lexend', sans-serif" font-size="55" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-2">O</text>
+  </g>
+</svg>
