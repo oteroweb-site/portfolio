@@ -1,17 +1,13 @@
-@import "tailwindcss";
-
-@theme {
-    --color-primary: #020617;
-    --color-secondary: #0f172a;
-    --color-accent: #2dd4bf;
-    --color-accent-hover: #0d9488;
-    --color-whatsapp: #25d366;
-
-    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-    --font-heading: "Lexend", ui-sans-serif, system-ui, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Custom styles and animations */
+
+:root {
+    --primary: #020617;
+    --accent: #2dd4bf;
+}
 
 body {
     overflow-x: hidden;
@@ -100,10 +96,4 @@ h2 {
 
 .skip-link:focus {
     top: 0;
-}
-
-@layer utilities {
-    .aspect-tall {
-        aspect-ratio: 2 / 3;
-    }
 }

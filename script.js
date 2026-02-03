@@ -25,11 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                // Close mobile menu if open
-                if (mobileMenu && !mobileMenu.classList.contains('translate-x-full')) {
-                    toggleMenu();
-                }
-
                 window.scrollTo({
                     top: target.offsetTop - 80, // Header offset
                     behavior: 'smooth'
@@ -37,32 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    // Mobile Menu Logic
-    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const closeMenu = document.getElementById('closeMenu');
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-
-    const toggleMenu = () => {
-        const isOpen = !mobileMenu.classList.contains('translate-x-full');
-        if (isOpen) {
-            mobileMenu.classList.add('translate-x-full');
-            document.body.classList.remove('overflow-hidden');
-        } else {
-            mobileMenu.classList.remove('translate-x-full');
-            document.body.classList.add('overflow-hidden');
-        }
-    };
-
-    if (mobileMenuToggle && mobileMenu) {
-        mobileMenuToggle.addEventListener('click', toggleMenu);
-        closeMenu.addEventListener('click', toggleMenu);
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', toggleMenu);
-        });
-    }
 
     // FAQ Accordion with Accessibility
     const faqItems = document.querySelectorAll('[data-faq-item]');
@@ -138,17 +107,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 5000);
         });
     }
-
-    // WhatsApp Event Tracking
-    document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
-        link.addEventListener('click', function () {
-            if (typeof gtag === 'function') {
-                gtag('event', 'whatsapp_click', {
-                    'event_category': 'Conversion',
-                    'event_label': 'WhatsApp Button',
-                    'button_location': this.innerText.trim() || 'Floating Button'
-                });
-            }
-        });
-    });
 });
