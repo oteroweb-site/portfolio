@@ -8,7 +8,23 @@
     <title>Desenvolvedor Web | Sites de Alta Conversão & Autoridade</title>
     <meta name="description"
         content="Criação de sites profissionais para psicólogos, advogados e pequenos negócios. Foco em autoridade digital e conversão de clientes.">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3N8T368PW9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3N8T368PW9');
+    </script>
+
     <link rel="icon" type="image/svg+xml" href="public/assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
     <script>
@@ -120,9 +136,10 @@
                     premium porque sua imagem digital não condiz com sua competência.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div
+                class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 md:pb-0 md:grid md:grid-cols-3 md:gap-8 scrollbar-hide">
                 <div
-                    class="p-8 rounded-2xl bg-primary border border-slate-800 hover:border-accent/30 transition-all group">
+                    class="min-w-[85vw] md:min-w-0 snap-center p-8 rounded-2xl bg-primary border border-slate-800 hover:border-accent/30 transition-all group">
                     <div
                         class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -136,7 +153,7 @@
                         consultas particulares.</p>
                 </div>
                 <div
-                    class="p-8 rounded-2xl bg-primary border border-slate-800 hover:border-accent/30 transition-all group">
+                    class="min-w-[85vw] md:min-w-0 snap-center p-8 rounded-2xl bg-primary border border-slate-800 hover:border-accent/30 transition-all group">
                     <div
                         class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,7 +167,7 @@
                         qualificados em áreas específicas.</p>
                 </div>
                 <div
-                    class="p-6 md:p-8 rounded-2xl bg-primary border border-slate-800 hover:border-accent/30 transition-all group">
+                    class="min-w-[85vw] md:min-w-0 snap-center p-6 md:p-8 rounded-2xl bg-primary border border-slate-800 hover:border-accent/30 transition-all group">
                     <div
                         class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -181,7 +198,7 @@
                     estratégias. Hoje uso esses modelos como base para projetos reais.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-8">
                 <!-- Project 1 -->
                 <div
                     class="group h-full flex flex-col bg-secondary rounded-2xl overflow-hidden border border-slate-800 hover:border-accent/50 transition-all transform hover:-translate-y-2">
@@ -192,28 +209,30 @@
                             <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
                             <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
                         </div>
-                        <img src="public/assets/screenshot-psicologo.webp" alt="Landing Page Psicologia"
+                        <img src="public/assets/screenshot-psicologo.webp"
+                            alt="Exemplo de Landing Page para Psicólogos - Design acolhedor e focado em agendamentos"
                             class="w-full h-full object-cover pt-10" loading="lazy">
                         <div
-                            class="absolute inset-0 z-30 pointer-events-none group-hover:bg-transparent bg-primary/20 transition-all duration-500">
+                            class="absolute inset-0 z-30 pointer-events-none group-hover:bg-transparent md:bg-primary/20 transition-all duration-500">
                         </div>
                         <div class="absolute top-12 left-4 z-40">
                             <span
-                                class="px-3 py-1 bg-accent/90 text-white text-[10px] font-bold uppercase rounded-md backdrop-blur-sm">Screenshot</span>
+                                class="px-2 py-0.5 md:px-3 md:py-1 bg-accent/90 text-white text-[8px] md:text-[10px] font-bold uppercase rounded-md backdrop-blur-sm">Screenshot</span>
                         </div>
                     </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Landing Page: Psicologia</h3>
-                        <p class="text-slate-400 text-sm mb-4">Objetivo: Transmitir calma e captar agendamentos via
+                    <div class="p-3 md:p-6 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-xl font-bold text-white mb-1 md:mb-2">Landing Page: Psicologia</h3>
+                        <p class="text-slate-400 text-xs md:text-sm mb-2 md:mb-4 leading-tight">Objetivo: Transmitir
+                            calma e captar agendamentos via
                             WhatsApp.</p>
-                        <ul class="text-xs text-slate-500 space-y-1 mb-6">
+                        <ul class="hidden md:block text-xs text-slate-500 space-y-1 mb-2 md:mb-6">
                             <li>• Carregamento Ultra Rápido</li>
                             <li>• Mobile-First Design</li>
                             <li>• Copy Persuasiva</li>
                         </ul>
                         <div class="mt-auto">
                             <a href="protifolio/claudia/helenabelchior/index.html" target="_blank"
-                                class="block w-full py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-bold transition-all text-sm text-center">Abrir
+                                class="block w-full py-2 md:py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-bold transition-all text-xs md:text-sm text-center">Abrir
                                 Demo</a>
                         </div>
                     </div>
@@ -229,28 +248,31 @@
                             <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
                             <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
                         </div>
-                        <img src="public/assets/screenshot-advogado.webp" alt="Site Institucional Direito"
+                        <img src="public/assets/screenshot-advogado.webp"
+                            alt="Exemplo de Site Institucional para Escritório de Advocacia - Design sóbrio e autoridade jurídica"
                             class="w-full h-full object-cover pt-10" loading="lazy">
                         <div
-                            class="absolute inset-0 z-30 pointer-events-none group-hover:bg-transparent bg-primary/20 transition-all duration-500">
+                            class="absolute inset-0 z-30 pointer-events-none group-hover:bg-transparent md:bg-primary/20 transition-all duration-500">
                         </div>
                         <div class="absolute top-12 left-4 z-40">
                             <span
-                                class="px-3 py-1 bg-accent/90 text-white text-[10px] font-bold uppercase rounded-md backdrop-blur-sm">Screenshot</span>
+                                class="px-2 py-0.5 md:px-3 md:py-1 bg-accent/90 text-white text-[8px] md:text-[10px] font-bold uppercase rounded-md backdrop-blur-sm">Screenshot</span>
                         </div>
                     </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Site Institucional: Direito</h3>
-                        <p class="text-slate-400 text-sm mb-4">Objetivo: Autoridade máxima e captação de leads
+                    <div class="p-3 md:p-6 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-xl font-bold text-white mb-1 md:mb-2">Site Institucional: Direito
+                        </h3>
+                        <p class="text-slate-400 text-xs md:text-sm mb-2 md:mb-4 leading-tight">Objetivo: Autoridade
+                            máxima e captação de leads
                             jurídicos.</p>
-                        <ul class="text-xs text-slate-500 space-y-1 mb-6">
+                        <ul class="hidden md:block text-xs text-slate-500 space-y-1 mb-2 md:mb-6">
                             <li>• Design Sóbrio e Elegante</li>
                             <li>• Estrutura de Blog (SEO)</li>
                             <li>• CTAs Estratégicos</li>
                         </ul>
                         <div class="mt-auto">
                             <a href="protifolio/advogado/index.html" target="_blank"
-                                class="block w-full py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-bold transition-all text-sm text-center">Abrir
+                                class="block w-full py-2 md:py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-bold transition-all text-xs md:text-sm text-center">Abrir
                                 Demo</a>
                         </div>
                     </div>
@@ -266,28 +288,32 @@
                             <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
                             <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
                         </div>
-                        <img src="public/assets/screenshot-trainer.webp" alt="Página de Vendas Personal Trainer"
+                        <img src="public/assets/screenshot-trainer.webp"
+                            alt="Página de Vendas de Alta Conversão para Personal Trainer - Foco em resultados e prova social"
                             class="w-full h-full object-cover pt-10" loading="lazy">
                         <div
-                            class="absolute inset-0 z-30 pointer-events-none group-hover:bg-transparent bg-primary/20 transition-all duration-500">
+                            class="absolute inset-0 z-30 pointer-events-none group-hover:bg-transparent md:bg-primary/20 transition-all duration-500">
                         </div>
                         <div class="absolute top-12 left-4 z-40">
                             <span
-                                class="px-3 py-1 bg-accent/90 text-white text-[10px] font-bold uppercase rounded-md backdrop-blur-sm">Screenshot</span>
+                                class="px-2 py-0.5 md:px-3 md:py-1 bg-accent/90 text-white text-[8px] md:text-[10px] font-bold uppercase rounded-md backdrop-blur-sm">Screenshot</span>
                         </div>
                     </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Página de Vendas: Personal Trainer</h3>
-                        <p class="text-slate-400 text-sm mb-4">Objetivo: Vender consultoria online e mostrar resultados.
+                    <div class="p-3 md:p-6 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-xl font-bold text-white mb-1 md:mb-2">Página de Vendas: Personal
+                            Trainer</h3>
+                        <p class="text-slate-400 text-xs md:text-sm mb-2 md:mb-4 leading-tight">Objetivo: Vender
+                            consultoria
+                            online e mostrar resultados.
                         </p>
-                        <ul class="text-xs text-slate-500 space-y-1 mb-6">
+                        <ul class="hidden md:block text-xs text-slate-500 space-y-1 mb-2 md:mb-6">
                             <li>• Foco em Prova Social</li>
                             <li>• Checkout Integrado</li>
                             <li>• Micro-animações</li>
                         </ul>
                         <div class="mt-auto">
                             <a href="protifolio/trainer/index.html" target="_blank"
-                                class="block w-full py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-bold transition-all text-sm text-center">Abrir
+                                class="block w-full py-2 md:py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-bold transition-all text-xs md:text-sm text-center">Abrir
                                 Demo</a>
                         </div>
                     </div>
@@ -303,28 +329,32 @@
                             <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
                             <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
                         </div>
-                        <img src="public/assets/screenshot-clinica.webp" alt="Landing Page Clínica Terapêutica"
+                        <img src="public/assets/screenshot-clinica.webp"
+                            alt="Landing Page para Clínica Terapêutica ou Espaço de Saúde - Design limpo e humanizado"
                             class="w-full h-full object-cover pt-10" loading="lazy">
                         <div
-                            class="absolute inset-0 z-30 pointer-events-none group-hover:bg-transparent bg-primary/20 transition-all duration-500">
+                            class="absolute inset-0 z-30 pointer-events-none group-hover:bg-transparent md:bg-primary/20 transition-all duration-500">
                         </div>
                         <div class="absolute top-12 left-4 z-40">
                             <span
-                                class="px-3 py-1 bg-accent/90 text-white text-[10px] font-bold uppercase rounded-md backdrop-blur-sm">Screenshot</span>
+                                class="px-2 py-0.5 md:px-3 md:py-1 bg-accent/90 text-white text-[8px] md:text-[10px] font-bold uppercase rounded-md backdrop-blur-sm">Screenshot</span>
                         </div>
                     </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-white mb-2">Landing Page: Clínica Terapêutica</h3>
-                        <p class="text-slate-400 text-sm mb-4">Objetivo: Transmitir acolhimento e autoridade para
+                    <div class="p-3 md:p-6 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-xl font-bold text-white mb-1 md:mb-2">Landing Page: Clínica
+                            Terapêutica</h3>
+                        <p class="text-slate-400 text-xs md:text-sm mb-2 md:mb-4 leading-tight">Objetivo: Transmitir
+                            acolhimento e
+                            autoridade para
                             clínicas de psicologia.</p>
-                        <ul class="text-xs text-slate-500 space-y-1 mb-6">
+                        <ul class="hidden md:block text-xs text-slate-500 space-y-1 mb-2 md:mb-6">
                             <li>• Design Humanizado e Moderno</li>
                             <li>• Seções de Equipe e Serviços</li>
                             <li>• CTA de Agendamento Rápido</li>
                         </ul>
                         <div class="mt-auto">
                             <a href="protifolio/novo_site_psicologia/index.html" target="_blank"
-                                class="block w-full py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-bold transition-all text-sm text-center">Abrir
+                                class="block w-full py-2 md:py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-bold transition-all text-xs md:text-sm text-center">Abrir
                                 Demo</a>
                         </div>
                     </div>
@@ -338,12 +368,12 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-5xl font-heading font-extrabold text-white mb-16 text-center">O Poder da Mudança
                 Visual</h2>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-12 items-start md:items-center">
                 <div class="relative group">
                     <div
                         class="absolute -inset-4 bg-red-500/10 rounded-3xl blur-2xl opacity-50 group-hover:opacity-100 transition-opacity">
                     </div>
-                    <div class="relative p-8 bg-primary/40 border border-red-500/20 rounded-2xl">
+                    <div class="relative p-3 md:p-8 bg-primary/40 border border-red-500/20 rounded-2xl">
                         <h4 class="text-red-400 font-bold mb-4 flex items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -365,7 +395,7 @@
                     <div
                         class="absolute -inset-4 bg-accent/10 rounded-3xl blur-2xl opacity-50 group-hover:opacity-100 transition-opacity">
                     </div>
-                    <div class="relative p-8 bg-primary border border-accent/30 rounded-2xl">
+                    <div class="relative p-3 md:p-8 bg-primary border border-accent/30 rounded-2xl">
                         <h4 class="text-accent font-bold mb-4 flex items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -429,19 +459,21 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-5xl font-heading font-extrabold text-white mb-16 text-center">Investimento
                 Transparente</h2>
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-8 max-w-4xl mx-auto">
                 <!-- Plan 1 -->
-                <div class="p-8 bg-primary rounded-3xl border border-slate-800 hover:border-slate-600 transition-all">
-                    <h3 class="text-xl font-bold text-white mb-2">Landing Page</h3>
-                    <div class="mb-6">
-                        <div class="flex items-baseline gap-2">
-                            <span class="text-3xl font-bold text-white">R$ 547</span>
-                            <span class="text-slate-400 text-sm">/ à vista</span>
+                <div
+                    class="p-3 md:p-8 bg-primary rounded-3xl border border-slate-800 hover:border-slate-600 transition-all">
+                    <h3 class="text-sm md:text-xl font-bold text-white mb-2">Landing Page</h3>
+                    <div class="mb-2 md:mb-6">
+                        <div class="flex flex-col md:flex-row md:items-baseline gap-0 md:gap-2">
+                            <span class="text-xl md:text-3xl font-bold text-white">R$ 547</span>
+                            <span class="text-slate-400 text-xs md:text-sm">/ à vista</span>
                         </div>
-                        <p class="text-accent text-sm font-medium mt-1">ou R$ 350 + 2x R$ 150</p>
+                        <p class="text-accent text-[10px] md:text-sm font-medium mt-1">ou R$ 350 + 2x R$ 150</p>
                     </div>
-                    <p class="text-slate-400 text-sm mb-6">Ideal para campanhas de anúncio (Google/Instagram).</p>
-                    <ul class="space-y-4 mb-8 text-sm">
+                    <p class="text-slate-400 text-xs md:text-sm mb-4 md:mb-6">Ideal para campanhas de anúncio
+                        (Google/Instagram).</p>
+                    <ul class="space-y-2 md:space-y-4 mb-4 md:mb-8 text-xs md:text-sm">
                         <li class="flex items-center gap-2"><svg class="w-4 h-4 text-accent" fill="currentColor"
                                 viewBox="0 0 20 20">
                                 <path
@@ -462,26 +494,27 @@
                             </svg> Otimização de Velocidade</li>
                     </ul>
                     <a href="https://wa.me/5521969717590"
-                        class="block text-center py-4 rounded-xl border border-accent text-accent font-bold hover:bg-accent hover:text-white transition-all">Começar
+                        class="block text-center py-2 md:py-4 rounded-xl border border-accent text-accent font-bold hover:bg-accent hover:text-white transition-all text-xs md:text-base">Começar
                         Agora</a>
                 </div>
 
                 <!-- Plan 2 -->
                 <div
-                    class="p-8 bg-primary rounded-3xl border-2 border-accent transform hover:scale-105 transition-all shadow-2xl shadow-accent/10 relative">
+                    class="p-3 md:p-8 bg-primary rounded-3xl border-2 border-accent transform hover:scale-105 transition-all shadow-2xl shadow-accent/10 relative">
                     <div
-                        class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-4 py-1 rounded-full text-xs font-bold">
+                        class="absolute -top-3 md:-top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-2 py-0.5 md:px-4 md:py-1 rounded-full text-[10px] md:text-xs font-bold whitespace-nowrap shadow-sm z-10">
                         MAIS POPULAR</div>
-                    <h3 class="text-xl font-bold text-white mb-2">Site Institucional</h3>
-                    <div class="mb-6">
-                        <div class="flex items-baseline gap-2">
-                            <span class="text-3xl font-bold text-white">R$ 847</span>
-                            <span class="text-slate-400 text-sm">/ à vista</span>
+                    <h3 class="text-sm md:text-xl font-bold text-white mb-2">Site Institucional</h3>
+                    <div class="mb-2 md:mb-6">
+                        <div class="flex flex-col md:flex-row md:items-baseline gap-0 md:gap-2">
+                            <span class="text-xl md:text-3xl font-bold text-white">R$ 847</span>
+                            <span class="text-slate-400 text-xs md:text-sm">/ à vista</span>
                         </div>
-                        <p class="text-accent text-sm font-medium mt-1">ou R$ 450 + 3x R$ 175</p>
+                        <p class="text-accent text-[10px] md:text-sm font-medium mt-1">ou R$ 450 + 3x R$ 175</p>
                     </div>
-                    <p class="text-slate-400 text-sm mb-6">Presença completa para transmitir autoridade máxima.</p>
-                    <ul class="space-y-4 mb-8 text-sm">
+                    <p class="text-slate-400 text-xs md:text-sm mb-4 md:mb-6">Presença completa para transmitir
+                        autoridade máxima.</p>
+                    <ul class="space-y-2 md:space-y-4 mb-4 md:mb-8 text-xs md:text-sm">
                         <li class="flex items-center gap-2"><svg class="w-4 h-4 text-accent" fill="currentColor"
                                 viewBox="0 0 20 20">
                                 <path
@@ -508,7 +541,7 @@
                             </svg> Painel Administrativo</li>
                     </ul>
                     <a href="https://wa.me/5521969717590"
-                        class="block text-center py-4 rounded-xl bg-accent text-white font-bold hover:bg-emerald-600 transition-all">Começar
+                        class="block text-center py-2 md:py-4 rounded-xl bg-accent text-white font-bold hover:bg-emerald-600 transition-all text-xs md:text-base">Começar
                         Agora</a>
                 </div>
             </div>

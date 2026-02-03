@@ -1,21 +1,7 @@
 /* Custom styles and animations */
 
-/* Local Fonts */
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300 700;
-    font-display: swap;
-    src: url('https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2') format('woff2');
-}
+/* Local Fonts: Removed in favor of Google Fonts API in index.html */
 
-@font-face {
-    font-family: 'Lexend';
-    font-style: normal;
-    font-weight: 400 800;
-    font-display: swap;
-    src: url('https://fonts.gstatic.com/s/lexend/v19/wlptgwvFAVdoq2_F94zlCfv0bz1WCzsX_LBte6KuGEo.woff2') format('woff2');
-}
 
 :root {
     --primary: #020617;
