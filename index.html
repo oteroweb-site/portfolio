@@ -25,27 +25,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS (Local Build) -->
     <link rel="stylesheet" href="styles.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#020617', // Slate 950 - More deep
-                        secondary: '#0f172a', // Slate 900
-                        accent: '#2dd4bf', // Teal 400 - More premium
-                        accentHover: '#0d9488',
-                        whatsapp: '#25d366',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        heading: ['Lexend', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+
 </head>
 
 <body class="bg-primary text-slate-200 font-sans selection:bg-accent selection:text-white">
@@ -82,14 +64,15 @@
     <section id="home" class="relative min-h-screen flex items-center pt-24 md:pt-20 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="public/assets/hero-bg.webp" alt="Background" class="w-full h-full object-cover opacity-20"
-                loading="eager">
+                loading="eager" width="1920" height="1080">
             <div class="absolute inset-0 bg-gradient-to-b from-primary/20 via-primary to-primary"></div>
         </div>
 
         <!-- Background Monogram -->
         <div
             class="absolute left-1/2 -translate-x-1/2 lg:left-auto lg:right-[-4%] lg:translate-x-0 top-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none z-0">
-            <img src="public/assets/monogram.png" alt="" class="h-[40vh] lg:h-[80vh] w-auto max-w-none object-contain">
+            <img src="public/assets/monogram.png" alt="" class="h-[40vh] lg:h-[80vh] w-auto max-w-none object-contain"
+                width="500" height="500">
         </div>
 
         <div class="container mx-auto px-6 relative z-10">
@@ -211,7 +194,7 @@
                         </div>
                         <img src="public/assets/screenshot-psicologo.webp"
                             alt="Exemplo de Landing Page para Psicólogos - Design acolhedor e focado em agendamentos"
-                            class="w-full h-full object-cover pt-10" loading="lazy">
+                            class="w-full h-full object-cover pt-10" loading="lazy" width="1280" height="720">
                         <div
                             class="absolute inset-0 z-30 pointer-events-none group-hover:bg-transparent md:bg-primary/20 transition-all duration-500">
                         </div>
@@ -250,7 +233,7 @@
                         </div>
                         <img src="public/assets/screenshot-advogado.webp"
                             alt="Exemplo de Site Institucional para Escritório de Advocacia - Design sóbrio e autoridade jurídica"
-                            class="w-full h-full object-cover pt-10" loading="lazy">
+                            class="w-full h-full object-cover pt-10" loading="lazy" width="1280" height="720">
                         <div
                             class="absolute inset-0 z-30 pointer-events-none group-hover:bg-transparent md:bg-primary/20 transition-all duration-500">
                         </div>
@@ -290,7 +273,7 @@
                         </div>
                         <img src="public/assets/screenshot-trainer.webp"
                             alt="Página de Vendas de Alta Conversão para Personal Trainer - Foco em resultados e prova social"
-                            class="w-full h-full object-cover pt-10" loading="lazy">
+                            class="w-full h-full object-cover pt-10" loading="lazy" width="1280" height="720">
                         <div
                             class="absolute inset-0 z-30 pointer-events-none group-hover:bg-transparent md:bg-primary/20 transition-all duration-500">
                         </div>
@@ -331,7 +314,7 @@
                         </div>
                         <img src="public/assets/screenshot-clinica.webp"
                             alt="Landing Page para Clínica Terapêutica ou Espaço de Saúde - Design limpo e humanizado"
-                            class="w-full h-full object-cover pt-10" loading="lazy">
+                            class="w-full h-full object-cover pt-10" loading="lazy" width="1280" height="720">
                         <div
                             class="absolute inset-0 z-30 pointer-events-none group-hover:bg-transparent md:bg-primary/20 transition-all duration-500">
                         </div>
