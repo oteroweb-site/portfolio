@@ -2,22 +2,24 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Reveal effects on scroll
+    // Reveal effects using IntersectionObserver (Performance Optimized)
     const reveals = document.querySelectorAll('.reveal');
 
-    const revealOnScroll = () => {
-        for (let i = 0; i < reveals.length; i++) {
-            const windowHeight = window.innerHeight;
-            const elementTop = reveals[i].getBoundingClientRect().top;
-            const elementVisible = 150;
-
-            if (elementTop < windowHeight - elementVisible) {
-                reveals[i].classList.add('active');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Optional: Reduce load by unobserving after reveal
+                // observer.unobserve(entry.target); 
             }
-        }
-    }
+        });
+    }, {
+        root: null,
+        threshold: 0.1, // Trigger when 10% visible
+        rootMargin: "0px 0px -50px 0px"
+    });
 
-    window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Initial check
+    reveals.forEach(element => revealObserver.observe(element));
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
