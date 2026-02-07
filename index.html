@@ -28,8 +28,8 @@
     <link rel="stylesheet" href="public/fonts/fonts.css">
 
     <!-- Tailwind CSS (Local Build) -->
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.min.css">
+    <script src="script.min.js" defer></script>
 
 </head>
 
@@ -78,7 +78,7 @@
         <!-- Background Monogram -->
         <div
             class="absolute left-1/2 -translate-x-1/2 lg:left-auto lg:right-[-4%] lg:translate-x-0 top-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none z-0">
-            <img src="public/assets/monogram.png" alt="" class="h-[40vh] lg:h-[80vh] w-auto max-w-none object-contain"
+            <img src="public/assets/monogram.svg" alt="" class="h-[40vh] lg:h-[80vh] w-auto max-w-none object-contain"
                 width="500" height="500" fetchpriority="high">
         </div>
 
@@ -200,6 +200,8 @@
                             <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
                         </div>
                         <img src="public/assets/screenshot-psicologo.webp"
+                            srcset="public/assets/screenshot-psicologo-mobile.webp 400w, public/assets/screenshot-psicologo.webp 1280w"
+                            sizes="(max-width: 768px) 90vw, 50vw"
                             alt="Exemplo de Landing Page para Psicólogos - Design acolhedor e focado em agendamentos"
                             class="w-full h-full object-cover pt-10" loading="lazy" width="1280" height="720">
                         <div
@@ -239,6 +241,8 @@
                             <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
                         </div>
                         <img src="public/assets/screenshot-advogado.webp"
+                            srcset="public/assets/screenshot-advogado-mobile.webp 400w, public/assets/screenshot-advogado.webp 1280w"
+                            sizes="(max-width: 768px) 90vw, 50vw"
                             alt="Exemplo de Site Institucional para Escritório de Advocacia - Design sóbrio e autoridade jurídica"
                             class="w-full h-full object-cover pt-10" loading="lazy" width="1280" height="720">
                         <div
@@ -279,6 +283,8 @@
                             <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
                         </div>
                         <img src="public/assets/screenshot-trainer.webp"
+                            srcset="public/assets/screenshot-trainer-mobile.webp 400w, public/assets/screenshot-trainer.webp 1280w"
+                            sizes="(max-width: 768px) 90vw, 50vw"
                             alt="Página de Vendas de Alta Conversão para Personal Trainer - Foco em resultados e prova social"
                             class="w-full h-full object-cover pt-10" loading="lazy" width="1280" height="720">
                         <div
@@ -320,6 +326,8 @@
                             <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
                         </div>
                         <img src="public/assets/screenshot-clinica.webp"
+                            srcset="public/assets/screenshot-clinica-mobile.webp 400w, public/assets/screenshot-clinica.webp 1280w"
+                            sizes="(max-width: 768px) 90vw, 50vw"
                             alt="Landing Page para Clínica Terapêutica ou Espaço de Saúde - Design limpo e humanizado"
                             class="w-full h-full object-cover pt-10" loading="lazy" width="1280" height="720">
                         <div
