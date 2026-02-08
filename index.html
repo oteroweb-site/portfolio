@@ -50,13 +50,27 @@
     <header
         class="fixed w-full z-50 bg-primary/80 backdrop-blur-md border-b border-slate-800 transition-all duration-300"
         id="mainHeader">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-heading font-extrabold text-white tracking-tight z-50">
-                OTERO<span class="text-accent">WEB</span>
+        <nav class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+            <!-- Top Row: Logo (Left) + Mobile CTA (Right) -->
+            <div class="w-full md:w-auto flex justify-between items-center">
+                <!-- Logo -->
+                <div class="text-2xl font-heading font-extrabold text-white tracking-tight z-50">
+                    OTERO<span class="text-accent">WEB</span>
+                </div>
+
+                <!-- CTA (Mobile Only - Simplified) -->
+                <a href="https://wa.me/5521969717590" target="_blank" rel="noopener"
+                    class="md:hidden bg-slate-700 hover:bg-slate-600 text-white px-4 py-1.5 rounded-full font-bold text-xs transition-all flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    WhatsApp
+                </a>
             </div>
 
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex gap-8 text-sm font-medium">
+            <!-- Mobile Divider -->
+            <div class="w-full h-px bg-slate-800 md:hidden"></div>
+
+            <!-- Menu (Visible on Mobile & Desktop) -->
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 text-sm font-medium">
                 <a href="#home" class="hover:text-accent transition-colors">Início</a>
                 <a href="#publico" class="hover:text-accent transition-colors">Para Quem?</a>
                 <a href="#portfolio" class="hover:text-accent transition-colors">Portfólio</a>
@@ -64,8 +78,9 @@
                 <a href="#precos" class="hover:text-accent transition-colors">Planos</a>
             </div>
 
+            <!-- CTA (Desktop Only) -->
             <a href="https://wa.me/5521969717590" target="_blank" rel="noopener"
-                class="bg-slate-700 hover:bg-slate-600 text-white px-5 py-2 rounded-full font-bold text-sm transition-all transform hover:scale-105">
+                class="hidden md:inline-flex bg-slate-700 hover:bg-slate-600 text-white px-5 py-2 rounded-full font-bold text-sm transition-all transform hover:scale-105">
                 Falar no WhatsApp
             </a>
         </nav>
@@ -81,8 +96,8 @@
 
         <!-- Background Monogram -->
         <div
-            class="absolute left-1/2 -translate-x-1/2 lg:left-auto lg:right-[-4%] lg:translate-x-0 top-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none z-0">
-            <img src="public/assets/monogram.svg" alt="" class="h-[40vh] lg:h-[80vh] w-auto max-w-none object-contain"
+            class="absolute left-1/2 -translate-x-1/2 lg:left-1/2 lg:translate-x-[-25%] top-1/2 -translate-y-1/2 opacity-30 pointer-events-none select-none z-10">
+            <img src="public/assets/monogram.svg" alt="" class="h-[60vh] lg:h-[140vh] w-auto max-w-none object-contain"
                 width="500" height="500" fetchpriority="high">
         </div>
 
