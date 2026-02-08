@@ -124,25 +124,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- NEW: Scroll Portfolio to Second Card on Load ---
+    // --- Scroll Portfolio to Second Card on Load ---
+    // Disabled as Psychology is now the first card
+    /*
     const portfolioCarousel = document.getElementById('portfolio-carousel');
-
+     
     function scrollToSecondCard() {
         if (portfolioCarousel && portfolioCarousel.children.length > 1) {
             const secondCard = portfolioCarousel.children[1];
-            if (secondCard) {
-                const cardLeft = secondCard.offsetLeft;
-                const cardWidth = secondCard.offsetWidth;
-                const containerWidth = portfolioCarousel.offsetWidth;
-
-                // Calculate the scroll position to center the card
-                const scrollPos = cardLeft - (containerWidth / 2) + (cardWidth / 2);
-
-                portfolioCarousel.scrollLeft = scrollPos;
+            if(secondCard) {
+                 const cardLeft = secondCard.offsetLeft;
+                 const cardWidth = secondCard.offsetWidth;
+                 const containerWidth = portfolioCarousel.offsetWidth;
+                 
+                 // Calculate the scroll position to center the card
+                 const scrollPos = cardLeft - (containerWidth / 2) + (cardWidth / 2);
+                 
+                 portfolioCarousel.scrollLeft = scrollPos;
             }
         }
     }
-
+    
     // Run when the page is fully loaded to ensure correct dimensions
     if (document.readyState === 'complete') {
         scrollToSecondCard();
@@ -151,4 +153,5 @@ document.addEventListener('DOMContentLoaded', () => {
         // Fallback: try after a short delay just in case
         setTimeout(scrollToSecondCard, 200);
     }
+    */
 });
