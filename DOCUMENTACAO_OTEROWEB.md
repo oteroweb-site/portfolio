@@ -24,6 +24,7 @@
 **OteroWeb** é um site portfólio profissional focado em conversão, desenvolvido para apresentar serviços de criação de sites para psicólogos, advogados, contadores e pequenos negócios.
 
 ### Objetivos do Site
+
 - ✅ Transmitir autoridade e profissionalismo
 - ✅ Converter visitantes em leads qualificados
 - ✅ Demonstrar expertise através de projetos reais
@@ -31,6 +32,7 @@
 - ✅ Ranquear bem no Google (SEO otimizado)
 
 ### Stack Tecnológica
+
 - **HTML5** semântico
 - **Tailwind CSS** (via CDN) para estilização
 - **JavaScript Vanilla** para interatividade
@@ -44,6 +46,7 @@
 ### Paleta de Cores
 
 #### Cores Principais
+
 ```css
 --primary: #020617      /* Slate 950 - Fundo principal */
 --secondary: #0f172a    /* Slate 900 - Fundo secundário */
@@ -51,6 +54,7 @@
 ```
 
 #### Cores de Ação
+
 ```css
 --whatsapp: #25d366     /* Verde WhatsApp (botão flutuante) */
 --cta-primary: #334155  /* Slate 700 (botões principais) */
@@ -58,6 +62,7 @@
 ```
 
 #### Cores de Texto
+
 ```css
 --text-primary: #e2e8f0    /* Slate 200 */
 --text-secondary: #94a3b8  /* Slate 400 */
@@ -66,6 +71,7 @@
 ```
 
 #### Cores de UI
+
 ```css
 --border-default: #1e293b  /* Slate 800 */
 --border-hover: #334155    /* Slate 700 */
@@ -75,6 +81,7 @@
 ### Tipografia
 
 #### Fontes
+
 1. **Inter** (Corpo de texto)
    - Pesos: 300, 400, 600, 700
    - Uso: Parágrafos, descrições, navegação
@@ -86,6 +93,7 @@
    - Carregamento: `@font-face` com `font-display: swap`
 
 #### Hierarquia de Tamanhos
+
 | Elemento | Mobile | Desktop |
 |----------|--------|---------|
 | H1 (Hero) | 2.25rem (36px) | 4.5rem (72px) |
@@ -113,6 +121,7 @@ gap: 2rem (32px)
 ### Efeitos Visuais
 
 #### Glassmorphism
+
 ```css
 background: rgba(15, 23, 42, 0.6);
 backdrop-filter: blur(16px);
@@ -120,6 +129,7 @@ border: 1px solid rgba(255, 255, 255, 0.05);
 ```
 
 #### Animações
+
 - **Float:** 4s ease-in-out infinite (elementos decorativos)
 - **Reveal:** 1s cubic-bezier(0.22, 1, 0.36, 1) (scroll reveal)
 - **Hover Scale:** transform: scale(1.05) (botões)
@@ -208,6 +218,7 @@ site/
 ## ⚙️ Funcionalidades
 
 ### 1. Navegação Suave
+
 ```javascript
 // Scroll suave para âncoras
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -225,6 +236,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 ```
 
 ### 2. Scroll Reveal
+
 ```javascript
 // Elementos aparecem ao scroll
 const reveals = document.querySelectorAll('.reveal');
@@ -243,6 +255,7 @@ window.addEventListener('scroll', revealOnScroll);
 ```
 
 ### 3. FAQ Accordion
+
 ```javascript
 // Accordion com acessibilidade
 const faqItems = document.querySelectorAll('[data-faq-item]');
@@ -264,6 +277,7 @@ faqItems.forEach((item, index) => {
 ```
 
 ### 4. Formulário de Contato
+
 ```javascript
 // Validação e feedback profissional
 contactForm.addEventListener('submit', async (e) => {
@@ -290,18 +304,22 @@ contactForm.addEventListener('submit', async (e) => {
 ### Performance
 
 #### 1. Imagens WebP
+
 - **Antes:** PNG/JPG (~500KB cada)
 - **Depois:** WebP (~35KB média)
 - **Redução:** ~85% no peso total
 
 #### 2. Lazy Loading
+
 ```html
 <img src="screenshot.webp" loading="lazy" alt="...">
 ```
+
 - Imagens carregam apenas quando visíveis
 - Melhora LCP (Largest Contentful Paint)
 
 #### 3. Font Optimization
+
 ```css
 @font-face {
     font-family: 'Inter';
@@ -311,6 +329,7 @@ contactForm.addEventListener('submit', async (e) => {
 ```
 
 #### 4. Portfolio Screenshots
+
 - **Antes:** 4 iframes (sites completos)
 - **Depois:** 4 imagens WebP estáticas
 - **Benefício:** Scroll 70% mais suave
@@ -318,17 +337,20 @@ contactForm.addEventListener('submit', async (e) => {
 ### SEO
 
 #### Meta Tags
+
 ```html
 <title>Desenvolvedor Web | Sites de Alta Conversão & Autoridade</title>
 <meta name="description" content="Criação de sites profissionais...">
 ```
 
 #### Heading Hierarchy
+
 - Apenas 1 `<h1>` por página
 - `<h2>` para seções principais
 - `<h3>` para subsections/cards
 
 #### Alt Tags Descritivos
+
 ```html
 <img src="screenshot-psicologo.webp" 
      alt="Landing Page Psicologia - Claudia Belchior">
@@ -337,13 +359,16 @@ contactForm.addEventListener('submit', async (e) => {
 ### Acessibilidade (A11y)
 
 #### 1. Skip Link
+
 ```html
 <a href="#home" class="skip-link">Pular para o conteúdo principal</a>
 ```
+
 - Aparece ao pressionar Tab
 - Facilita navegação por teclado
 
 #### 2. ARIA Attributes
+
 ```html
 <div role="button" 
      aria-expanded="true" 
@@ -352,6 +377,7 @@ contactForm.addEventListener('submit', async (e) => {
 ```
 
 #### 3. Focus Visible
+
 ```css
 :focus-visible {
     outline: 2px solid var(--accent);
@@ -360,6 +386,7 @@ contactForm.addEventListener('submit', async (e) => {
 ```
 
 #### 4. Keyboard Navigation
+
 - Tab: navega entre elementos
 - Enter/Space: ativa botões e accordions
 - Escape: fecha modais (se houver)
@@ -399,9 +426,11 @@ tailwind.config = {
 
 1. **Capturar screenshot** do projeto (1024x510px recomendado)
 2. **Converter para WebP:**
+
    ```bash
    npx -y cwebp-bin screenshot.png -o screenshot.webp -q 85
    ```
+
 3. **Mover para:** `public/assets/`
 4. **Adicionar card** em `index.html` (após linha 310):
 
@@ -453,6 +482,7 @@ tailwind.config = {
 **Buscar e substituir:** `5500000000000` pelo novo número (com DDI)
 
 Arquivos afetados:
+
 - `index.html` (múltiplas ocorrências)
 
 ---
@@ -514,7 +544,8 @@ Arquivos afetados:
 ### Suporte
 
 Para dúvidas ou suporte técnico:
-- **Email:** contato@oteroweb.com.br
+
+- **Email:** <contato@oteroweb-site.github.io>/portfolio
 - **WhatsApp:** +55 (00) 00000-0000
 
 ---
