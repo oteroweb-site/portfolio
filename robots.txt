@@ -1,0 +1,9 @@
+Sitemap: https://oteroweb-site.github.io/portfolio/sitemap.xml
+
+User-agent: *
+Allow: /
+
+# Bloquear pastas de sistema se necessário
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /tailwind.config.js
